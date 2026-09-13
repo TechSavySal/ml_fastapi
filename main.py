@@ -25,7 +25,7 @@ class PredictionResponse(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "ML API is running succesfully"}
+   return {"message": "ML API is running successfully", "version": "1.0"}
 @app.get("/health")
 def health():
     return {"status": "healthy"}
